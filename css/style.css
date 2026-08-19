@@ -1,0 +1,38 @@
+.box-2 {height:250px
+}
+/* Container que permite a rolagem horizontal */
+.horizontal-scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; /* Rolagem suave em celulares */
+}
+
+/* Configuração de tamanho máximo e largura fixa dos cards */
+.card-loja {
+  min-width: 250px;
+  max-width: 280px;
+  max-height: 200px;
+  flex: 0 0 auto; /* Impede os cards de encolherem */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o texto verticalmente dentro do card */
+}
+
+/* Customização moderna da barra de rolagem (Scrollbar) */
+.horizontal-scroll-container::-webkit-scrollbar {
+  height: 6px; /* Altura da barra horizontal */
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+ 
+.horizontal-scroll-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1; 
+  border-radius: 10px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8; 
+}
